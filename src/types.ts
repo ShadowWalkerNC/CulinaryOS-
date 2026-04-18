@@ -11,7 +11,7 @@ export type RecipeItem = {
   amount: number;
 };
 
-export type MenuItemCategory = 'Coffee' | 'Tea' | 'Pastries' | 'Food' | 'Other';
+export type MenuItemCategory = string;
 
 export type MenuItem = {
   id: string;

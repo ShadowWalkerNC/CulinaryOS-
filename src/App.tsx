@@ -4,6 +4,7 @@ import { RegisterView } from './views/RegisterView';
 import { InventoryView } from './views/InventoryView';
 import { AnalyticsView } from './views/AnalyticsView';
 import { SettingsView } from './views/SettingsView';
+import { BuildPlanView } from './views/BuildPlanView';
 import { usePOSData } from './hooks/usePOSData';
 
 export default function App() {
@@ -48,6 +49,10 @@ export default function App() {
         
         <div className={`absolute inset-0 transition-opacity duration-200 ${activeTab === 'settings' ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'}`}>
           <SettingsView orders={orders} onClearData={clearData} />
+        </div>
+
+        <div className={`absolute inset-0 transition-opacity duration-200 ${activeTab === 'buildplan' ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'}`}>
+          <BuildPlanView />
         </div>
       </main>
     </div>

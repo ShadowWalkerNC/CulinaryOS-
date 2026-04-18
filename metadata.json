@@ -1,6 +1,6 @@
 {
-  "name": "LocalCafe POS",
-  "description": "Offline-first tablet Point-of-Sale system with inventory management and analytics.",
+  "name": "CulinaryOS",
+  "description": "The Definitive Build Plan v5.0 offline-first POS for Northern Fixin's Food Truck.",
   "requestFramePermissions": ["bluetooth"],
   "majorCapabilities": []
 }

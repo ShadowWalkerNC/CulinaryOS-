@@ -1,7 +1,7 @@
 import React from 'react';
-import { Store, Package, TrendingUp, Settings as SettingsIcon } from 'lucide-react';
+import { Store, Package, TrendingUp, Settings as SettingsIcon, FileText } from 'lucide-react';
 
-export type TabId = 'register' | 'inventory' | 'analytics' | 'settings';
+export type TabId = 'register' | 'inventory' | 'analytics' | 'settings' | 'buildplan';
 
 interface SidebarProps {
   activeTab: TabId;
@@ -14,12 +14,13 @@ export function Sidebar({ activeTab, onSelectTab }: SidebarProps) {
     { id: 'inventory' as TabId, label: 'Inventory', icon: Package },
     { id: 'analytics' as TabId, label: 'Analytics', icon: TrendingUp },
     { id: 'settings' as TabId, label: 'Settings', icon: SettingsIcon },
+    { id: 'buildplan' as TabId, label: 'Build Plan', icon: FileText }
   ];
 
   return (
     <div className="w-[80px] bg-bg-surface border-r border-border-subtle flex flex-col items-center py-6 gap-8 h-screen flex-shrink-0">
-      <div className="font-serif italic text-2xl text-accent mb-auto">
-        G
+      <div className="font-serif italic text-2xl text-accent mb-auto font-bold">
+        C
       </div>
 
       <nav className="flex flex-col gap-4 w-full px-2">

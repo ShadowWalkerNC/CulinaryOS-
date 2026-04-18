@@ -59,7 +59,7 @@ export function RegisterView({ menuItems, onProcessOrder }: RegisterViewProps) {
       {/* Menu Area (Left) */}
       <div className="flex-1 flex flex-col">
         <div className="p-6 flex justify-between items-center">
-          <h1 className="font-serif font-normal text-[28px]">Coffee & Tea</h1>
+          <h1 className="font-serif font-normal text-[28px]">Menu</h1>
           <div className="flex gap-4 text-[11px] uppercase tracking-widest text-text-secondary">
             <div className="flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-[#4CAF50]"></div>
