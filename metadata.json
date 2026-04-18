@@ -1,0 +1,6 @@
+{
+  "name": "LocalCafe POS",
+  "description": "Offline-first tablet Point-of-Sale system with inventory management and analytics.",
+  "requestFramePermissions": ["bluetooth"],
+  "majorCapabilities": []
+}
